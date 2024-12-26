@@ -1,0 +1,20 @@
+.title {
+    color: #FFFFFF;
+    font-family: var(--fuente-roboto);
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 100%;
+    max-width: 432px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 16px 0;
+    margin-bottom: 40px;
+}
+
+.containerVideos {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+}

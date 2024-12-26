@@ -1,0 +1,38 @@
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    /* width: 430px; */
+    min-width: 300px;
+    max-width: 430px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    border-radius: 15px 15px 0 0;
+}
+
+.imageCard {
+    width: 100%;
+    /* border-bottom: 5px solid; */
+}
+
+.captionCard {
+    padding: 15px 0;
+    justify-content: space-around;
+    display: flex;
+    border: 5px solid;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    background-color: #03122F;
+}
+
+.buttonsCard {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: var(--fuente-roboto);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.containerFooter {
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 42px 0;
+    border-top: 4px solid var(--primary-color);
+}

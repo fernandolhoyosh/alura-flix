@@ -1,0 +1,6 @@
+.galleryContainer {
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+    width: 100%;  
+}
