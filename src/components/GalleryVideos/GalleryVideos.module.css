@@ -1,6 +1,8 @@
 .galleryContainer {
+    padding: 0 40px;
     display: flex;
     gap: 90px;
     flex-direction: column;
-    width: 100%;  
+    width: 100%;
+    box-sizing: border-box;  
 }

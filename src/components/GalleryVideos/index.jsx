@@ -1,8 +1,10 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import styles from "./GalleryVideos.module.css"
 import Categories from "../Categories"
+import { VideosContext } from "../../context/VideosContext"
 
 const GalleryVideos = () => {
+    const {videos} = useContext(VideosContext)
     const [categories, setCategories] = useState([
         {
             id:1,
@@ -22,9 +24,10 @@ const GalleryVideos = () => {
     ])
   return (
     <section className={styles.galleryContainer}>
-        {categories.map((category, index) => {
-            return <Categories key={index} data={category} />
-        })}
+        {
+        categories.map((category, index) => 
+             <Categories key={index} data={category} videos={videos.filter(video => video.category === category.title)} />
+        )}
     </section>
   )
 }
