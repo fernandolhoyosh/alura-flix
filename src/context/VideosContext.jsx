@@ -19,7 +19,7 @@ const VideosProvider = ({children}) => {
     },[])
 
     return (
-        <VideosContext.Provider value={{videos}}>
+        <VideosContext.Provider value={{videos, setVideos}}>
             {children}
         </VideosContext.Provider>
     )

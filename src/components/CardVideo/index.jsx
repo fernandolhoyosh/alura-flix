@@ -1,7 +1,9 @@
 import styles from "./CardVideo.module.css";
+import useConectionApi from "../../hooks/useConectionApi";
 
 const CardVideo = (props) => {
   const {data, color} = props
+  const { requestDeleteVideo } = useConectionApi()
 
     const stylesImg = {
         borderColor: color,
@@ -14,7 +16,7 @@ const CardVideo = (props) => {
     <figure className={styles.videoContainer}>
       <img className={styles.imageCard} style={stylesImg} src={data.image} alt={`Card: ${data.title}`} />
       <figcaption className={styles.captionCard} style={stylesCaption}>
-        <button className={styles.buttonsCard}>
+        <button onClick={ ()=> requestDeleteVideo(data.id)} className={styles.buttonsCard}>
             <img src="/icons/delete.png" />
             BORRAR
         </button>
