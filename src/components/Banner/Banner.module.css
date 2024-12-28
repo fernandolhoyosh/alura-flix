@@ -1,0 +1,43 @@
+.containerBanner {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.containerBanner > img {
+    width: 100%;
+}
+
+.containerInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    font-family: var(--fuente-roboto);
+    padding: 0 40px;
+}
+
+.containerInfo > h3 {
+    max-width: 296px;
+    background-color: #6BD1FF;
+    padding: 16px 0;
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.containerInfo > h4 {
+    font-size: 46px;
+    font-weight: 400;
+}
+
+
+.containerInfo > p {
+    font-size: 18px;
+    font-weight: lighter;
+    max-width: 662px;
+}
