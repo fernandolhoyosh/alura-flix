@@ -1,0 +1,26 @@
+.dialogContainer {
+    position: absolute;
+    display: flex;
+    top: 100px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 5px solid #6BD1FF;
+    background-color: #03122F;
+}
+
+.title {
+    color: var(--primary-color);
+    font-family: var(--fuente-roboto);
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.buttonClose {
+    position: relative;
+    top: 31px;
+    right: 32px;
+    /* background: transparent; */
+    border: none;
+    cursor: pointer;
+}

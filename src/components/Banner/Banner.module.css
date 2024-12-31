@@ -1,8 +1,8 @@
 .containerBanner {
     display: flex;
-    align-items: center;
     box-sizing: border-box;
     width: 100%;
+    height: 832px;
 }
 
 .containerBanner > img {
@@ -11,7 +11,13 @@
 
 .containerSection {
     position: absolute;
+    top: 340px;
     display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .gradientContainer {
@@ -30,7 +36,6 @@
     color: #FFFFFF;
     box-sizing: border-box;
     font-family: var(--fuente-roboto);
-    padding: 0 40px;
 }
 
 .containerInfo > h3 {
@@ -47,6 +52,7 @@
 .containerInfo > h4 {
     font-size: 46px;
     font-weight: 400;
+    margin-bottom: 9px;
 }
 
 
@@ -59,4 +65,7 @@
 .cardFeatured {
     border-radius: 15px;
     border: 5px solid;
+    width: 100%;
+    max-width: 600px;
+    max-height: 333px;
 }

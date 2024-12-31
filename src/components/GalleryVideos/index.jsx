@@ -3,25 +3,8 @@ import styles from "./GalleryVideos.module.css"
 import Categories from "../Categories"
 import { VideosContext } from "../../context/VideosContext"
 
-const GalleryVideos = () => {
-    const {videos} = useContext(VideosContext)
-    const [categories, setCategories] = useState([
-        {
-            id:1,
-            title: "FRONT END",
-            color: "#6BD1FF"
-        },
-        {
-            id:2,
-            title: "BACK END",
-            color: "#00C86F"
-        },
-        {
-            id:3,
-            title: "INNOVACIÓN Y GESTIÓN",
-            color: "#FFBA05"
-        }
-    ])
+const GalleryVideos = ({videos, categories}) => {
+    
   return (
     <section className={styles.galleryContainer}>
         {
