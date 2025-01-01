@@ -1,9 +1,17 @@
 import styles from "./CardVideo.module.css";
 import useConectionApi from "../../hooks/useConectionApi";
+import { useContext } from "react";
+import { VideosContext } from "../../context/VideosContext";
 
 const CardVideo = (props) => {
+  const {openModal, setOpenModal, setVideo} = useContext(VideosContext)
   const {data, color} = props
   const { requestDeleteVideo } = useConectionApi()
+
+  const handleEditCard = () => {
+    setOpenModal(!openModal)
+    setVideo(data)
+  }
 
     const stylesImg = {
         borderColor: color,
@@ -20,7 +28,7 @@ const CardVideo = (props) => {
             <img src="/icons/delete.png" />
             BORRAR
         </button>
-        <button className={styles.buttonsCard}>
+        <button className={styles.buttonsCard} onClick={handleEditCard}>
             <img src="/icons/edit.png" />
             EDITAR
         </button>

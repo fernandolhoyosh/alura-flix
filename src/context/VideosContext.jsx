@@ -4,6 +4,8 @@ const VideosContext = createContext();
 
 const VideosProvider = ({children}) => {
     const [videos, setVideos] = useState([]);
+    const [openModal, setOpenModal] = useState(false);
+    const [video, setVideo] = useState({});
 
     useEffect(() => {
         const fecthData = async () => {
@@ -19,7 +21,14 @@ const VideosProvider = ({children}) => {
     },[])
 
     return (
-        <VideosContext.Provider value={{videos, setVideos}}>
+        <VideosContext.Provider value={{
+            videos,
+            setVideos,
+            openModal,
+            setOpenModal,
+            video,
+            setVideo
+            }}>
             {children}
         </VideosContext.Provider>
     )
