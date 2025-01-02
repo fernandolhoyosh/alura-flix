@@ -29,7 +29,26 @@ const useConectionApi = () => {
         }
     }
 
-    return { requestGetVideos, requestDeleteVideo }
+    async function requestUpdateVideo(id, data) {
+        try {
+            const response = await fetch(`http://localhost:3000/videos/${id}`, {
+                method: "PUT",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            if (!response.ok) {
+                throw new Error("Error al actualizar el video")
+            }else {
+                requestGetVideos()
+            }
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    return { requestGetVideos, requestDeleteVideo, requestUpdateVideo }
 
 }
 
