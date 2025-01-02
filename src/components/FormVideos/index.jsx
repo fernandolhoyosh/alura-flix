@@ -24,14 +24,18 @@ const FormVideos = ({colorBorder}) => {
   /* console.log(errors) */
 
   useEffect(() => {
-    reset({
-        title: video.title,
-        category: video.category,
-        image: video.image,
-        video: video.video,
-        description: video.description
-    })
-  }, [reset]);
+    if (openModal) {
+        reset({
+            title: video.title,
+            category: video.category,
+            image: video.image,
+            video: video.video,
+            description: video.description
+        })
+    } else {
+        handleResetForm();
+    }
+  }, []);
 
   const handleResetForm = () => {
     reset();
