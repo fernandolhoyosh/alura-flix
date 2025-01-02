@@ -1,8 +1,8 @@
-import { useContext, useEffect } from "react"
+import { useContext } from "react"
 import { VideosContext } from "../context/VideosContext"
 
 const useConectionApi = () => {
-    const {videos, setVideos} = useContext(VideosContext)
+    const {setVideos} = useContext(VideosContext)
 
     async function requestGetVideos () {
         try {
@@ -11,6 +11,27 @@ const useConectionApi = () => {
             setVideos(data)
         } catch (error) {
             console.error("Error al obtener los datos: ", error)
+        }
+    }
+
+    async function requestAddVideo(data) {
+        try {
+            const response = await fetch("http://localhost:3000/videos", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            if (!response.ok) {
+                throw new Error("Error en la peticion: ", response.statusText)
+            }else {
+                requestGetVideos()
+            }
+            const responseData = await response.json()
+            return responseData
+        } catch (error) {
+            console.error("Hubo un problema con la solicitud: ", error)
         }
     }
 
@@ -48,7 +69,7 @@ const useConectionApi = () => {
         }
     }
 
-    return { requestGetVideos, requestDeleteVideo, requestUpdateVideo }
+    return { requestGetVideos, requestAddVideo, requestDeleteVideo, requestUpdateVideo }
 
 }
 

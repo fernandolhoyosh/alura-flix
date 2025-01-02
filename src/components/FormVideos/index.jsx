@@ -8,7 +8,7 @@ import useConectionApi from "../../hooks/useConectionApi";
 
 const FormVideos = ({colorBorder}) => {
   const { video, openModal, setOpenModal } = useContext(VideosContext);
-  const {requestUpdateVideo} = useConectionApi()
+  const {requestAddVideo, requestUpdateVideo} = useConectionApi()
   const { register, handleSubmit, reset, formState: { errors }} = useForm();
 
   const borderStyle = {borderColor: colorBorder}
@@ -17,9 +17,11 @@ const FormVideos = ({colorBorder}) => {
     console.log(data)
     if (openModal) {
         requestUpdateVideo(video.id, data)
-        handleResetForm()
         setOpenModal(null)
+    } else {
+        requestAddVideo(data)
     }
+    handleResetForm()
   } 
   /* console.log(errors) */
 
