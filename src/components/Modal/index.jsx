@@ -16,7 +16,7 @@ const Modal = () => {
             onClose={() => setOpenModal(null)}
           >
             <h3 className={styles.title}>EDITAR CARD</h3>
-            <FormVideos />
+            <FormVideos colorBorder="#2271D1" />
             <form method="dialog">
               <button className={styles.buttonClose} formMethod="dialog">
                 <img src="/icons/x-cancel.png" alt="Icono Cerrar" />

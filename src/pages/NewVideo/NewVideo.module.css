@@ -1,0 +1,69 @@
+.containerSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    top: 130px;
+}
+
+.containerTitles {
+    margin-top: 50px;
+    text-align: center;
+    font-family: var(--fuente-roboto);
+    color: #F5F5F5;
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+.containerTitles > h3 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.containerTitles > h5 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.containerForm {
+    padding: 47px 90px 70px;
+    box-sizing: border-box;
+}
+
+.containerForm > h4 {
+    color: #F5F5F5;
+    font-family: var(--fuente-sans-pro);
+    font-size: 36px;
+    font-weight: normal;
+    text-align: left;
+    border-top: 3px solid #262626;
+    border-bottom: 3px solid #262626;
+    padding: 15px 0;
+    max-width: 1360px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.containerForm > form {
+    max-width: 1280px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.containerForm > form > div {
+    max-width: 570px;
+    width: 100%;
+}
+
+.containerForm > form > section {
+    max-width: 1180px;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+
+.containerForm > form > div > input, select, textarea {
+
+}

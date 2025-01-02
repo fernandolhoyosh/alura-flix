@@ -42,10 +42,10 @@ option {
     resize: none;
 }
 
-
 .buttonForm {
     display: flex;
     justify-content: space-between;
+    flex-basis: 100%;
 }
 
 .errorsInput {
