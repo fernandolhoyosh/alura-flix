@@ -7,7 +7,7 @@ const Categories = (props) => {
   return (
         <>
           {videos.length > 0 &&
-            <section>
+            <section className={styles.sectionCategory}>
               <h4 className={styles.title} style={{backgroundColor:color}}>{title}</h4>
               <picture className={styles.containerVideos}>
                 {

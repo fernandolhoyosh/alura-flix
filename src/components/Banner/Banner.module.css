@@ -59,7 +59,6 @@
 .containerInfo > p {
     font-size: 18px;
     font-weight: lighter;
-    max-width: 662px;
 }
 
 .cardFeatured {
@@ -68,4 +67,61 @@
     width: 100%;
     max-width: 600px;
     max-height: 333px;
+}
+
+@media (max-width : 1024px) {
+    .containerBanner {
+        height: 620px;
+    }
+
+    .containerSection {
+        top: 240px;
+        gap: 37px;
+        padding: 0 28px;
+    }
+
+    .containerInfo {
+        width: 100%;
+    }
+
+    .containerInfo > h3 {
+        max-width: 282px;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .containerInfo > h4 {
+        font-size: 32px;
+    }
+    
+    
+    .containerInfo > p {
+        font-size: 1rem;
+        /* max-width: 470px; */
+    }
+
+    .cardFeatured {
+        border-radius: 15px;
+        border: 5px solid;
+        width: 100%;
+        max-width: 459px;
+        max-height: 236px;
+    }
+}
+
+@media (max-width : 730px) {
+    .containerSection {
+        flex-direction: column;
+        gap: 20px;
+        top: 150px
+    }
+
+    .containerInfo {
+        width: 100%;
+    }
+
+    .containerInfo > h3 {
+        margin-bottom: 20px;
+        max-width: 500px;
+    }
 }

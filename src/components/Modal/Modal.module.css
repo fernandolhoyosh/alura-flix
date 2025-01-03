@@ -48,3 +48,9 @@
     border: none;
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    .dialogContainer {
+        max-width: 865px;
+    }
+}

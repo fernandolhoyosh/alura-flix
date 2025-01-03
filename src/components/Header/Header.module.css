@@ -24,3 +24,10 @@ nav {
     max-width: 180px;
     text-decoration: none;
 }
+
+@media (max-width : 1024px) {
+    header {
+        padding: 35px 20px;
+        position: sticky;
+    }
+}

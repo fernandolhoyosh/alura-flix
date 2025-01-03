@@ -67,3 +67,21 @@
 .containerForm > form > div > input, select, textarea {
 
 }
+
+@media (max-width: 1024px) {
+    .containerSection {
+        
+    }
+
+    .containerTitles {
+        margin-bottom: 0;
+    }
+
+    .containerForm {
+        padding: 47px 50px 70px;
+    }
+
+    .containerForm > form > div {
+        max-width: 100%;
+    }
+}

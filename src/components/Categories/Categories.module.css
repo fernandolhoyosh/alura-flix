@@ -1,3 +1,8 @@
+.sectionCategory {
+    display: flex;
+    flex-direction: column;
+}
+
 .title {
     color: #FFFFFF;
     font-family: var(--fuente-roboto);
@@ -26,4 +31,36 @@
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .sectionCategory {
+        align-items: center;
+    }
+
+    .containerVideos {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .containerVideos::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    .containerVideos::-webkit-scrollbar-track {
+        background: #31364a;
+        border-radius: 10px;
+    }
+
+    .containerVideos::-webkit-scrollbar-thumb {
+        background: #2271D1;
+        border-radius: 10px;
+    }
+
+    .containerVideos::-webkit-scrollbar-thumb:hover {
+        background: #084fa5;
+    }
+
+
 }
