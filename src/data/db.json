@@ -1,20 +1,20 @@
 {
   "videos": [
     {
-      "id": 1,
       "title": "Cuándo usar let, var y const?",
       "category": "FRONT END",
       "image": "https://i.ytimg.com/vi/PztCEdIJITY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCd5jxSprvo-KAWg2kDt9y5Kv7OqA",
       "video": "https://www.youtube.com/watch?v=PztCEdIJITY",
-      "description": "¿A veces cuando estás programando sientes dificuldades en saber en qué momento utilizar let, var o const para declarar una variable? En este video te sacamos estas dudas, además de explicarte lo que es escopo global y local en JavaScript."
+      "description": "¿A veces cuando estás programando sientes dificuldades en saber en qué momento utilizar let, var o const para declarar una variable? En este video te sacamos estas dudas, además de explicarte lo que es escopo global y local en JavaScript.",
+      "id": 1
     },
     {
-      "id": 2,
       "title": "¿Qué es JavaScript?",
       "category": "FRONT END",
       "image": "https://i.ytimg.com/vi/GJfOSoaXk4s/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDreFD5RmKqHAKumA40iu2Y7WRlng",
       "video": "https://www.youtube.com/watch?v=GJfOSoaXk4s",
-      "description": "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? Genesys y Gabriela nos hablan exactamente de esto en este Alura Tips."
+      "description": "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? Genesys y Gabriela nos hablan exactamente de esto en este Alura Tips.",
+      "id": 2
     },
     {
       "id": 3,
