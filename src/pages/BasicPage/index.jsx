@@ -5,13 +5,13 @@ import Footer from "../../components/Footer"
 
 const BasicPage = () => {
   return (
-    <div className={styles.container}>
+    <>
         <Header />
         <main className={styles.mainContainer}>
             <Outlet/>
         </main>
         <Footer />
-    </div>
+    </>
   )
 }
 
