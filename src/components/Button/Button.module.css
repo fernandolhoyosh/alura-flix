@@ -28,13 +28,29 @@
     .button {
         display: flex;
         gap: 10px;
+        align-items: center;
         justify-content: center;
+        padding: 0 20px;
+        border-radius: 50px;
+    }
 
+    .button:hover {
+        background-color: #2271d175;
     }
 
     .button > img {
         display: flex;
-        width: 50px;
+        width: 42px;
         height: 42px;
+    }
+
+    .buttonAddPhone {
+        padding: 0;
+        border: none;
+    }
+
+    .buttonAddPhone:hover {
+        box-shadow: none;
+        background: transparent;
     }
 }

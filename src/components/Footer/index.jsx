@@ -11,7 +11,7 @@ const Footer = () => {
             <Button text="HOME" icon="/icons/home-white.png" />
         </Link>
         <Link className={styles.link} to={"/new"}>
-            <Button text="" icon="/icons/add-white.png" />
+            <Button className="buttonAddPhone" text="" icon="/icons/add-white.png" />
         </Link>
         </div>
     </footer>
