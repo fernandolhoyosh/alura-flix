@@ -25,7 +25,8 @@
 }
 
 @media (max-width: 430px) {
-    .button {
+    
+    .buttonIcon {
         display: flex;
         gap: 10px;
         align-items: center;
@@ -34,11 +35,11 @@
         border-radius: 50px;
     }
 
-    .button:hover {
+    .buttonIcon:hover {
         background-color: #2271d175;
     }
 
-    .button > img {
+    .buttonIcon > img {
         display: flex;
         width: 42px;
         height: 42px;

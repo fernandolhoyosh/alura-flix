@@ -65,3 +65,16 @@ option {
     color: red;
     padding-left: 10px;
 }
+
+@media (max-width: 430px) {
+    .formVideos {
+        width: 100%;
+        max-width: 349px;
+    }
+
+    .buttonForm {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

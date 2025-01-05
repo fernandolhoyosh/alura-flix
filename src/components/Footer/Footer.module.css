@@ -20,6 +20,12 @@
 }
 
 @media (max-width: 430px) {
+    .containerFooter {
+        margin-top: 100px;
+        padding: 23px 0;
+
+    }
+
     .containerFooter > img {
         display: none;
     }

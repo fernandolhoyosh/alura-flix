@@ -8,10 +8,10 @@ const Footer = () => {
         <img src="/src/assets/Logo.png" alt="Logo ALura Flix" />
         <div className={styles.containerButtonsFooter}>
         <Link className={styles.link} to={"/"}>
-            <Button text="HOME" icon="/icons/home-white.png" />
+            <Button classIcon="buttonIcon" text="HOME" icon="/icons/home-white.png" />
         </Link>
         <Link className={styles.link} to={"/new"}>
-            <Button className="buttonAddPhone" text="" icon="/icons/add-white.png" />
+            <Button classIcon="buttonIcon" className="buttonAddPhone" text="" icon="/icons/add-white.png" />
         </Link>
         </div>
     </footer>

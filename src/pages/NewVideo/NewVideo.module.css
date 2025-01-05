@@ -85,3 +85,23 @@
         max-width: 100%;
     }
 }
+
+@media (max-width: 430px) {
+    .containerSection {
+        top: 50px;
+    }
+
+    .containerTitles > h3 {
+        font-size: 40px;
+    }
+
+    .containerTitles > h5 {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .containerForm {
+        padding: 47px 30px 50px;
+    }
+
+}
