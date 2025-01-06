@@ -71,11 +71,12 @@
 
 @media (max-width : 1024px) {
     .containerBanner {
-        height: 620px;
+        align-items: center;
+        height: auto;
     }
 
     .containerSection {
-        top: 240px;
+        top: auto;
         gap: 37px;
         padding: 0 28px;
     }
@@ -120,7 +121,6 @@
     .containerSection {
         flex-direction: column;
         gap: 20px;
-        top: 150px
     }
 
     .containerInfo {
@@ -131,6 +131,10 @@
         margin-bottom: 20px;
         max-width: 500px;
         padding: 8px 0;
+        font-size: 24px;
+    }
+
+    .containerInfo > h4 {
         font-size: 24px;
     }
 

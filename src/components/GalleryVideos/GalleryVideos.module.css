@@ -6,7 +6,8 @@
     width: 100%;
     box-sizing: border-box;
     max-width: 1440px;
-    margin: 0 auto;  
+    margin: 0 auto;
+    
 }
 
 @media (max-width: 1024px) {
@@ -19,5 +20,6 @@
     .galleryContainer {
         margin-top: 42px;
         padding: 0 18px;
+        /* max-width: 410px; */
     }
 }

@@ -4,6 +4,8 @@
     flex-direction: column;
     width: 100%;
     max-width: 575px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .inputContainer {

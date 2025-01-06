@@ -25,7 +25,7 @@ const Home = () => {
     }
 ])
   return (
-    <section>
+    <section className={styles.test}>
         <Banner categories={categories} videos={videos} />
         <GalleryVideos categories={categories} videos={videos}/>
         <Modal/>

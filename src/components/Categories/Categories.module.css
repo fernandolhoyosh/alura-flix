@@ -1,6 +1,8 @@
 .sectionCategory {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .title {
@@ -36,6 +38,7 @@
 @media (max-width: 1024px) {
     .sectionCategory {
         align-items: center;
+        max-width: 890px;
     }
 
     .containerVideos {
