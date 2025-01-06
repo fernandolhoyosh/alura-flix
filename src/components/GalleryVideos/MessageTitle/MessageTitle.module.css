@@ -1,0 +1,12 @@
+.titleMessage {
+    color: #F5F5F5;
+    font-family: var(--fuente-roboto);
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 430px) {
+    .titleMessage {
+        
+    }
+}

@@ -42,6 +42,21 @@ option {
     resize: none;
 }
 
+.inputContainer > textarea::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.inputContainer > textarea::-webkit-scrollbar-track {
+    background: #31364a;
+    border-radius: 5px;
+}
+
+.inputContainer > textarea::-webkit-scrollbar-thumb {
+    background: #2271D1;
+    border-radius: 5px;
+}
+
 .buttonForm {
     display: flex;
     justify-content: space-between;

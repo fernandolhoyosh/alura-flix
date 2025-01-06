@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     background-color: #191919;
     color: white;
     text-align: center;
@@ -13,7 +13,7 @@
 
   .notFoundImage {
     border-radius: 20px;
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -22,7 +22,7 @@
   
   .notFoundTitle {
     font-family: var(--fuente-roboto);
-    font-size: 8rem;
+    font-size: 6rem;
     color: #2271D1;
     animation: bounce 1.5s infinite;
   }
@@ -30,7 +30,6 @@
   .notFoundText {
     font-family: var(--fuente-sans-pro);
     font-size: 1.5rem;
-    margin-top: 1rem;
     color: #ffffff;
   }
   
