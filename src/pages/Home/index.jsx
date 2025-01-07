@@ -6,7 +6,7 @@ import Banner from "../../components/Banner"
 import Modal from "../../components/Modal"
 
 const Home = () => {
-  const {videos} = useContext(VideosContext)
+  const {videos, error} = useContext(VideosContext)
   const [categories, setCategories] = useState([
     {
         id:1,
