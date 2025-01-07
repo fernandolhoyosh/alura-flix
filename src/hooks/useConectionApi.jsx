@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { VideosContext } from "../context/VideosContext"
 
 const useConectionApi = () => {
-    const {setVideos} = useContext(VideosContext)
+    const {setVideos, setError} = useContext(VideosContext)
 
     async function requestGetVideos () {
         try {
@@ -41,12 +41,13 @@ const useConectionApi = () => {
                 method: "DELETE"
             })
             if (!response.ok) {
-                throw new Error("Error al eliminar el video")
+                throw new Error(`Error: ${response.status} ${response.statusText}`)
             }else {
                 requestGetVideos()            
             }
         } catch (error) {
-            console.log(error)
+            console.error(`Error al eliminar el video: ${error}`)
+            setError(`Error al eliminar el video: ${error}`)
         }
     }
 

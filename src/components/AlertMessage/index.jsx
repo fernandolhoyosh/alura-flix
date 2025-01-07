@@ -6,12 +6,13 @@ import { VideosContext } from "../../context/VideosContext";
 
 
 const AlertMessage = ({text, type}) => {
-  const {error} = useContext(VideosContext)
+  const {error, setError} = useContext(VideosContext)
   const [open, setOpen] = useState(true)
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpen(false);
+      setError(null)
     }, 5000);
     return () => clearTimeout(timer);
   }, [error]);

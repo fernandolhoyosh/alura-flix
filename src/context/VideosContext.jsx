@@ -33,7 +33,8 @@ const VideosProvider = ({children}) => {
             setOpenModal,
             video,
             setVideo,
-            error
+            error,
+            setError
             }}>
             {children}
         </VideosContext.Provider>
