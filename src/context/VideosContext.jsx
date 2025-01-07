@@ -19,7 +19,7 @@ const VideosProvider = ({children}) => {
                 setVideos(data)
             } catch (error) {
                 console.error("Error al obtener los datos: ", error)
-                setError("Error al obtener los datos: ", error)
+                setError(`Error al obtener los datos: ${error}`)
             }
         }
         fecthData()

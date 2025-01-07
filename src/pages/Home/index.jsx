@@ -4,6 +4,8 @@ import { VideosContext } from "../../context/VideosContext"
 import GalleryVideos from "../../components/GalleryVideos"
 import Banner from "../../components/Banner"
 import Modal from "../../components/Modal"
+import AlertMessage from "../../components/AlertMessage"
+
 
 const Home = () => {
   const {videos, error} = useContext(VideosContext)
@@ -25,7 +27,8 @@ const Home = () => {
     }
 ])
   return (
-    <section className={styles.test}>
+    <section>
+        {error && <AlertMessage text={error} type={"error"} />}
         <Banner categories={categories} videos={videos} />
         <GalleryVideos categories={categories} videos={videos}/>
         <Modal/>
