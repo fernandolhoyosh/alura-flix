@@ -6,7 +6,7 @@ const VideosProvider = ({children}) => {
     const [videos, setVideos] = useState([]);
     const [openModal, setOpenModal] = useState(false);
     const [video, setVideo] = useState({});
-    const [error, setError] = useState("");
+    const [alert, setAlert] = useState(null);
 
     useEffect(() => {
         const fecthData = async () => {
@@ -19,7 +19,11 @@ const VideosProvider = ({children}) => {
                 setVideos(data)
             } catch (error) {
                 console.error("Error al obtener los datos: ", error)
-                setError(`Error al obtener los datos: ${error}`)
+                setAlert({
+                    status:"error",
+                    type: "Error",
+                    message:`No se puede obtener los datos: ${error}`
+                })
             }
         }
         fecthData()
@@ -33,8 +37,8 @@ const VideosProvider = ({children}) => {
             setOpenModal,
             video,
             setVideo,
-            error,
-            setError
+            alert,
+            setAlert
             }}>
             {children}
         </VideosContext.Provider>

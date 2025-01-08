@@ -18,6 +18,10 @@ const FormVideos = ({colorBorder}) => {
     if (openModal) {
         requestUpdateVideo(video.id, data)
         setOpenModal(null)
+        /* .then(data => {
+        })
+        .catch(err =>{    
+        }) */
     } else {
         requestAddVideo(data)
     }

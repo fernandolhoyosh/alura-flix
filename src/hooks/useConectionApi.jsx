@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { VideosContext } from "../context/VideosContext"
 
 const useConectionApi = () => {
-    const {setVideos, setError} = useContext(VideosContext)
+    const {setVideos, setAlert} = useContext(VideosContext)
 
     async function requestGetVideos () {
         try {
@@ -26,12 +26,22 @@ const useConectionApi = () => {
             if (!response.ok) {
                 throw new Error("Error en la peticion: ", response.statusText)
             }else {
+                setAlert({
+                    status:"success",
+                    type: "Success",
+                    message:`Video agregado correctamente`
+                })
                 requestGetVideos()
             }
             const responseData = await response.json()
             return responseData
         } catch (error) {
             console.error("Hubo un problema con la solicitud: ", error)
+            setAlert({
+                status:"error",
+                type: "Error",
+                message:`Hubo un problema con la solicitud: ${error}`
+            })
         }
     }
 
@@ -47,7 +57,11 @@ const useConectionApi = () => {
             }
         } catch (error) {
             console.error(`Error al eliminar el video: ${error}`)
-            setError(`Error al eliminar el video: ${error}`)
+            setAlert({
+                status:"error",
+                type: "Error",
+                message:`No se puede eliminar el video: ${error}`
+            })
         }
     }
 
@@ -63,10 +77,20 @@ const useConectionApi = () => {
             if (!response.ok) {
                 throw new Error("Error al actualizar el video")
             }else {
+                setAlert({
+                    status:"info",
+                    type: "Info",
+                    message:`Video actualizado correctamente`
+                })
                 requestGetVideos()
             }
         } catch (error) {
             console.error(error)
+            setAlert({
+                status:"error",
+                type: "Error",
+                message:`Hubo un problema al actualizar el video: ${error}`
+            })
         }
     }
 

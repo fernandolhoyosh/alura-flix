@@ -5,22 +5,22 @@ import { useContext, useEffect, useState } from 'react';
 import { VideosContext } from "../../context/VideosContext";
 
 
-const AlertMessage = ({text, type}) => {
-  const {error, setError} = useContext(VideosContext)
+const AlertMessage = () => {
+  const { alert, setAlert} = useContext(VideosContext)
   const [open, setOpen] = useState(true)
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpen(false);
-      setError(null)
+      setAlert(null)
     }, 5000);
     return () => clearTimeout(timer);
-  }, [error]);
+  }, [alert]);
 
   return (
-      open && (<Alert className={styles.alertStyles} severity={type}>
-                <AlertTitle>{type}</AlertTitle>
-                  {text}
+      open && (<Alert className={styles.alertStyles} severity={alert.status}>
+                <AlertTitle>{alert.type}</AlertTitle>
+                  {alert.message}
                 </Alert> )
   )
 }

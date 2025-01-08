@@ -1,7 +1,8 @@
 .alertStyles {
-    position: absolute;
+    position: fixed;
     top: 20%;
     left: 50%;
     justify-content: center;
     transform: translate(-50%, -50%);
+    z-index: 3;
 }

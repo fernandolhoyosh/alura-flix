@@ -1,7 +1,5 @@
-import { useContext, useState } from "react"
 import styles from "./GalleryVideos.module.css"
 import Categories from "../Categories"
-import { VideosContext } from "../../context/VideosContext"
 import MessageTitle from "./MessageTitle"
 
 const GalleryVideos = ({videos, categories}) => {
