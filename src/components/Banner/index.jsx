@@ -15,8 +15,8 @@ const Banner = ({videos, categories}) => {
 
   return (
     <div className={styles.containerBanner}>
+        <div className={styles.gradientContainer}></div>
         <img src="/img/banner.png" alt="Banner" />
-        {/* <div className={styles.gradientContainer}></div> */}
         <section className={styles.containerSection}>
           <div className={styles.containerInfo}>
             <h3 style={{backgroundColor: color}}>{video.category}</h3>

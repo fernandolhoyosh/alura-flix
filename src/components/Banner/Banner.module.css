@@ -1,4 +1,5 @@
 .containerBanner {
+    position: relative;
     display: flex;
     box-sizing: border-box;
     width: 100%;
@@ -7,6 +8,7 @@
 
 .containerBanner > img {
     width: 100%;
+    height: auto;
 }
 
 .containerSection {
@@ -21,9 +23,10 @@
 }
 
 .gradientContainer {
-    color: #FFFFFF;
-    background-color: #154580;
     position: absolute;
+    background-color: #154580;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0.5;
@@ -73,6 +76,10 @@
     .containerBanner {
         align-items: center;
         height: auto;
+    }
+
+    .gradientContainer {
+        /* height: 592px; */
     }
 
     .containerSection {
