@@ -2,6 +2,7 @@ import styles from "./CardVideo.module.css";
 import useConectionApi from "../../hooks/useConectionApi";
 import { useContext } from "react";
 import { VideosContext } from "../../context/VideosContext";
+import { Link } from "react-router-dom";
 
 const CardVideo = (props) => {
   const {openModal, setOpenModal, setVideo} = useContext(VideosContext)
@@ -22,7 +23,9 @@ const CardVideo = (props) => {
 
   return (
     <figure className={styles.videoContainer}>
-      <img className={styles.imageCard} style={stylesImg} src={data.image} alt={`Card: ${data.title}`} />
+      <Link to={`/${data.id}`}>
+        <img className={styles.imageCard} style={stylesImg} src={data.image} alt={`Card: ${data.title}`} />
+      </Link>
       <figcaption className={styles.captionCard} style={stylesCaption}>
         <button onClick={ ()=> requestDeleteVideo(data.id)} className={styles.buttonsCard}>
             <img src="/icons/delete.png" />

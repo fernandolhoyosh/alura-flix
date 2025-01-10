@@ -10,12 +10,12 @@ const Banner = ({videos, categories}) => {
     description: "Este challenge es una forma de aprendizaje. Es un mecanismo donde podrás comprometerte en la resolución de un problema para poder aplicar todos los conocimientos adquiridos en la formación React."
   }
 
-  useEffect(() => {
+  /* useEffect(() => {
     const intervalo = setInterval(() => {
       
     }, 5000)
     return () => clearInterval(intervalo)
-  }, [])
+  }, []) */
 
   const numberRandom =  videos.length > 0 ? Math.floor(Math.random()*videos.length) : 0;
   const video = videos.length > 0 ? videos[numberRandom] : videoDefault;
