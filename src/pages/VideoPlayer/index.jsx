@@ -19,18 +19,19 @@ const VideoPlayer = () => {
         return <NotFound />
     }
 
-    {console.log(video)}
-
   return (
-    <section className={styles.containerPlayer}>
-        <h2>{video.title}</h2>
-        <div>
-        <iframe width="560" height="315"
+    <section className={styles.container}>
+        <div className={styles.containerPlayer}>
+        <iframe width="100%" height="100%"
             src={video.video}
             title={video.title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen>               
         </iframe>
+        </div>
+        <div className={styles.containerTitles}>
+        <h3>{video.title}</h3>
+        <h4>{video.description}</h4>
         </div>
     </section>
   )
