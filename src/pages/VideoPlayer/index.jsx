@@ -1,3 +1,4 @@
+import styles from "./VideoPlayer.module.css"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import NotFound from "../NotFound"
@@ -21,13 +22,12 @@ const VideoPlayer = () => {
     {console.log(video)}
 
   return (
-    <section>
+    <section className={styles.containerPlayer}>
         <h2>{video.title}</h2>
         <div>
         <iframe width="560" height="315"
             src={video.video}
             title={video.title}
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen>               
         </iframe>
