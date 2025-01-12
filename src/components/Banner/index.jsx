@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Banner.module.css"
 
 const Banner = ({videos, categories}) => {
@@ -25,14 +26,14 @@ const Banner = ({videos, categories}) => {
     <div className={styles.containerBanner}>
         <div className={styles.gradientContainer}></div>
         <img src="/img/banner.png" alt="Banner" />
-        <section className={styles.containerSection}>
+        <Link to={`/${video.id}`} state={color} className={styles.containerSection}>
           <div className={styles.containerInfo}>
             <h3 style={{backgroundColor: color}}>{video.category}</h3>
             <h4>{video.title}</h4>
             <p>{video.description}</p>
           </div>
           <img className={styles.cardFeatured} style={{borderColor: color}} src={video.image} alt="Card Imagen" />
-        </section>
+        </Link>
     </div>
   )
 }
