@@ -46,9 +46,11 @@ Alura Flix también permite reproducir los videos directamente en la aplicación
 Alura Flix cuenta con un diseño responsivo que asegura una excelente experiencia de usuario tanto en tablets como en dispositivos móviles. Utilizando Material UI, la interfaz se adapta automáticamente al tamaño de la pantalla del dispositivo.
 
 Vista Mobile
+
 ![Captura de pantalla de la app en un dispositivo móvil](https://github.com/user-attachments/assets/7fec5738-6507-4f1b-bda6-a4751ca3c378)
 
 Vista Tablets
+
 ![Captura de pantalla de la app en una tablet](https://github.com/user-attachments/assets/f251cefd-95c5-4ecd-9d5a-ec5ee57a58f4)
 
 ## Conclusión
