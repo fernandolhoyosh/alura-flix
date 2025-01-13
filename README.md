@@ -53,7 +53,7 @@ Vista Tablets
 
 ![Captura de pantalla de la app en una tablet](https://github.com/user-attachments/assets/f251cefd-95c5-4ecd-9d5a-ec5ee57a58f4)
 
-## Instrucciones para iniciar el proyecto en Local
+## Instrucciones para iniciar el proyecto en la rama (branch) Local
 
 ### 1. Clonar el repositorio
 
