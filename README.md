@@ -24,24 +24,32 @@ Alura Flix permite a los usuarios explorar y ver todos los videos educativos dis
 ### 2. Añadir Nuevos Videos
 Los usuarios pueden añadir nuevos videos proporcionando detalles como título, categoría, imagen, video y descripción.
 
-![Captura de pantalla del formulario para añadir videos](URL_DE_LA_CAPTURA_DE_PANTALLA_2)
+![Captura de pantalla del formulario para añadir videos](https://github.com/user-attachments/assets/6a647dd0-ad4a-42c5-aa3c-481b644204bd)
 
 ### 3. Eliminar Videos
 Es posible eliminar videos específicos de la plataforma mediante un sencillo proceso de eliminación.
 
-![Captura de pantalla del botón de eliminación de videos](URL_DE_LA_CAPTURA_DE_PANTALLA_3)
+![Captura de pantalla del botón de eliminación de videos](https://github.com/user-attachments/assets/034578cc-ace5-433d-92b5-dbe6013b69a0)
 
 ### 4. Actualizar Videos
 Los usuarios pueden actualizar la información de los videos existentes, incluyendo el título, categoría, imagen, video y descripción.
 
-![Captura de pantalla del formulario de actualización de videos](URL_DE_LA_CAPTURA_DE_PANTALLA_4)
+![Captura de pantalla del formulario de actualización de videos](https://github.com/user-attachments/assets/7d060d72-0259-4197-a80b-1c89b24c324e)
+
+### 5. Reproducir Videos
+Alura Flix también permite reproducir los videos directamente en la aplicación, proporcionando una experiencia de usuario completa y sin interrupciones.
+
+![Captura de pantalla del reproductor de video](https://github.com/user-attachments/assets/8d72febf-b747-479e-be96-84b45cb18406)
 
 ## Diseño Responsivo
 
 Alura Flix cuenta con un diseño responsivo que asegura una excelente experiencia de usuario tanto en tablets como en dispositivos móviles. Utilizando Material UI, la interfaz se adapta automáticamente al tamaño de la pantalla del dispositivo.
 
-![Captura de pantalla de la app en un dispositivo móvil](URL_DE_LA_CAPTURA_DE_PANTALLA_5)
-![Captura de pantalla de la app en una tablet](URL_DE_LA_CAPTURA_DE_PANTALLA_6)
+Vista Mobile
+![Captura de pantalla de la app en un dispositivo móvil](https://github.com/user-attachments/assets/7fec5738-6507-4f1b-bda6-a4751ca3c378)
+
+Vista Tablets
+![Captura de pantalla de la app en una tablet](https://github.com/user-attachments/assets/f251cefd-95c5-4ecd-9d5a-ec5ee57a58f4)
 
 ## Conclusión
 
