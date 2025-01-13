@@ -26,7 +26,7 @@ const Banner = ({videos, categories}) => {
     <div className={styles.containerBanner}>
         <div className={styles.gradientContainer}></div>
         <img src="/img/banner.png" alt="Banner" />
-        <Link to={`/${video.id}`} state={color} className={styles.containerSection}>
+        <Link to={`/videos/${video.id}`} state={color} className={styles.containerSection}>
           <div className={styles.containerInfo}>
             <h3 style={{backgroundColor: color}}>{video.category}</h3>
             <h4>{video.title}</h4>

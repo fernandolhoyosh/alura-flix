@@ -10,10 +10,11 @@ const VideoPlayer = () => {
     const color = location.state || "#FFFFFF"
 
     useEffect(() => {
-        fetch(`http://localhost:3000/videos/?id=${params.id}`)
+        fetch(`https://api-alura-flix-brown.vercel.app/videos/${params.id}`)
             .then(response => response.json())
             .then(data => {
-                setVideo(...data)
+                console.log(data)
+                data.data === null ? setVideo(null) : setVideo(data)
             })
     },[])
 
@@ -24,7 +25,6 @@ const VideoPlayer = () => {
 
   return (
     <section className={styles.container}>
-        {console.log(color)}
         <div className={styles.containerPlayer}>
         <iframe width="100%" height="100%"
             src={video.video}
