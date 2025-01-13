@@ -53,6 +53,16 @@ Vista Tablets
 
 ![Captura de pantalla de la app en una tablet](https://github.com/user-attachments/assets/f251cefd-95c5-4ecd-9d5a-ec5ee57a58f4)
 
+## Instrucciones para Correr el Proyecto en Local
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/fernandolhoyosh/alura-flix.git
+cd alura-flix
+```
+
+
 ## Conclusión
 
 **Alura Flix** es una solución integral para el acceso a videos educativos sobre programación, diseñada con tecnologías modernas para ofrecer una experiencia de usuario óptima y responsiva. Es una herramienta poderosa para quienes buscan aprender y mejorar sus habilidades en programación.
