@@ -5,7 +5,7 @@ import Button from "../Button";
 const Header = () => {
   return (
     <header>
-      <img src="/src/assets/Logo.png" alt="Logo Alura Flix" />
+      <img src="/img/Logo.png" alt="Logo Alura Flix" />
       <nav>
         <Link className={styles.link} to={"/"}>
             <Button text="HOME" />

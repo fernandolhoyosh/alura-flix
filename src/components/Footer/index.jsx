@@ -5,7 +5,7 @@ import Button from "../Button"
 const Footer = () => {
   return (
     <footer className={styles.containerFooter}>
-        <img src="/src/assets/Logo.png" alt="Logo ALura Flix" />
+        <img src="/img/Logo.png" alt="Logo ALura Flix" />
         <div className={styles.containerButtonsFooter}>
         <Link className={styles.link} to={"/"}>
             <Button classIcon="buttonIcon" text="HOME" icon="/icons/home-white.png" />
