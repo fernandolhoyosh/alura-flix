@@ -19,7 +19,7 @@
 ### 1. Ver Videos Disponibles
 Alura Flix permite a los usuarios explorar y ver todos los videos educativos disponibles en la plataforma.
 
-![Captura de pantalla de la lista de videos](URL_DE_LA_CAPTURA_DE_PANTALLA_1)
+![Captura de pantalla de la lista de videos](https://github.com/user-attachments/assets/31ab3602-17db-4848-9a6f-2cf245b7c064)
 
 ### 2. Añadir Nuevos Videos
 Los usuarios pueden añadir nuevos videos proporcionando detalles como título, categoría, imagen, video y descripción.
