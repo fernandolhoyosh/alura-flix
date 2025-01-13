@@ -53,6 +53,11 @@ const useConectionApi = () => {
             if (!response.ok) {
                 throw new Error(`Error: ${response.status} ${response.statusText}`)
             }else {
+                setAlert({
+                    status:"info",
+                    type: "Info",
+                    message:`Video eliminado correctamente`
+                })
                 requestGetVideos()            
             }
         } catch (error) {
