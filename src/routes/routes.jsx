@@ -12,7 +12,7 @@ const AppRoutes = () => {
         <Route path="/" element={<BasicPage />}>
           <Route index element={<Home />}></Route>
           <Route path="new" element={<NewVideo />}></Route>
-          <Route path=":id" element={<VideoPlayer />}></Route>
+          <Route path="videos/:id" element={<VideoPlayer />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Route>
       </Routes>

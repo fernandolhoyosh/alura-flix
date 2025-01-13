@@ -11,7 +11,7 @@ const VideosProvider = ({children}) => {
     useEffect(() => {
         const fecthData = async () => {
             try {
-                const response = await fetch("http://localhost:3000/videos")
+                const response = await fetch("https://api-alura-flix-brown.vercel.app/videos")
                 if (!response.ok) {
                     throw new Error (`Error: ${response.status} ${response.statusText}`)
                 }

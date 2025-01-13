@@ -23,7 +23,7 @@ const CardVideo = (props) => {
 
   return (
     <figure className={styles.videoContainer}>
-      <Link to={`/${data.id}`} state={color}>
+      <Link to={`/videos/${data.id}`} state={color}>
         <img className={styles.imageCard} style={stylesImg} src={data.image} alt={`Card: ${data.title}`} />
       </Link>
       <figcaption className={styles.captionCard} style={stylesCaption}>

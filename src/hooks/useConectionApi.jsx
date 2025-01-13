@@ -6,7 +6,7 @@ const useConectionApi = () => {
 
     async function requestGetVideos () {
         try {
-            const response = await fetch("http://localhost:3000/videos")
+            const response = await fetch("https://api-alura-flix-brown.vercel.app/videos")
             const data = await response.json()
             setVideos(data)
         } catch (error) {
@@ -16,7 +16,7 @@ const useConectionApi = () => {
 
     async function requestAddVideo(data) {
         try {
-            const response = await fetch("http://localhost:3000/videos", {
+            const response = await fetch("https://api-alura-flix-brown.vercel.app/videos", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
@@ -47,12 +47,17 @@ const useConectionApi = () => {
 
     async function requestDeleteVideo(id) {
         try {
-            const response = await fetch(`http://localhost:3000/videos/${id}`, {
+            const response = await fetch(`https://api-alura-flix-brown.vercel.app/videos/${id}`, {
                 method: "DELETE"
             })
             if (!response.ok) {
                 throw new Error(`Error: ${response.status} ${response.statusText}`)
             }else {
+                setAlert({
+                    status:"info",
+                    type: "Info",
+                    message:`Video eliminado correctamente`
+                })
                 requestGetVideos()            
             }
         } catch (error) {
@@ -67,7 +72,7 @@ const useConectionApi = () => {
 
     async function requestUpdateVideo(id, data) {
         try {
-            const response = await fetch(`http://localhost:3000/videos/${id}`, {
+            const response = await fetch(`https://api-alura-flix-brown.vercel.app/videos/${id}`, {
                 method: "PUT",
                 headers: {
                     'Content-Type': 'application/json'
