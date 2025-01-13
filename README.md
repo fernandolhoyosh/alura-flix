@@ -53,13 +53,31 @@ Vista Tablets
 
 ![Captura de pantalla de la app en una tablet](https://github.com/user-attachments/assets/f251cefd-95c5-4ecd-9d5a-ec5ee57a58f4)
 
-## Instrucciones para Correr el Proyecto en Local
+## Instrucciones para iniciar el proyecto en Local
 
 ### 1. Clonar el repositorio
 
 ```bash
 git clone https://github.com/fernandolhoyosh/alura-flix.git
 cd alura-flix
+```
+
+### 2. Instalar las dependencias
+
+```bash
+npm install
+```
+
+### 3. Iniciar el frontend de React
+
+```bash
+npm run dev
+```
+
+### 4. Iniciar el servidor JSON-SERVER
+
+```bash
+npx json-server --watch ./src/data/db.json
 ```
 
 
