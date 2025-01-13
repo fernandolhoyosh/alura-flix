@@ -4,6 +4,8 @@
 
 **Alura Flix** es una aplicación de videos educativos sobre programación, diseñada para proporcionar una experiencia completa y fluida a los usuarios. Con **Alura Flix** puedes ver todos los videos disponibles, añadir nuevos videos, eliminar videos y actualizarlos. La app cuenta con un diseño responsivo, optimizado para tablets y móviles.
 
+## Link Demo de la App: https://alura-flix-mocha-tau.vercel.app/
+
 ## Tecnologías Utilizadas
 
 - **React**: Para la creación de interfaces de usuario interactivas y componentes reutilizables.
